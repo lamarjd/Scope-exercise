@@ -18,8 +18,8 @@ hidden2(); // returns 1
 function hiddenCounter() {
   let count = 0;
   function counter() {
-    // count++;
-    return count++;
+    count++;
+    return count;
   }
   return counter;
 }
