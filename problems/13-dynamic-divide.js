@@ -2,10 +2,15 @@
 Write a function named `dynamicDivide(divisor)`. The dynamicDivide function will
 return a new function that when invoked will divide the argument number by the
 divisor.
+***********************************************************************/
 
+let dynamicDivide = (divisor) => {
+  return function(num) {
+    return num / divisor;
+  }
+}
 
-Look below to see how this function is invoked:
-
+// Look below to see how this function is invoked:
 const halfer = dynamicDivide(2); // returns a function
 halfer(20); // returns 10
 
@@ -14,12 +19,6 @@ divideByThree(30); // returns 10
 
 const  divideByFive = dynamicDivide(5);
 divideByFive(50); // returns 10
-
-
-***********************************************************************/
-
-// your code here
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
